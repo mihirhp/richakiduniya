@@ -1,0 +1,24 @@
+{
+    "slides": [
+        {
+            "slideHeader": "Header 1",
+            "slideText": "Some Text",
+            "slideImage": "images/sliders/slide1.jpg"
+        },
+        {
+            "slideHeader": "Header 2",
+            "slideText": "Some Text",
+            "slideImage": "images/sliders/slide2.jpg"
+        },
+        {
+            "slideHeader": "Header 3",
+            "slideText": "Some Text",
+            "slideImage": "images/sliders/slide3.jpg"
+        },
+        {
+            "slideHeader": "Header 4",
+            "slideText": "Some Text",
+            "slideImage": "images/sliders/slide4.jpg"
+        }
+    ]
+}
