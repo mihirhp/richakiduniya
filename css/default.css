@@ -27,7 +27,7 @@ e. Others
  ------------------------------------------------------------------ */
 
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
+@import url("/css/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css");
 
 /* ------------------------------------------------------------------
 /* b. Reset
@@ -801,7 +801,16 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
+.service-icon {
+    float: left;
+    margin: 0 30px 0 0;
+    padding: 0;
+	width: 40px;
+}
+.service-icon i {
+    font-size: 40px;
+	transition: all 0.3s ease-in-out 0s;
+}
 
 
 
