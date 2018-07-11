@@ -811,6 +811,6 @@ properly.
     font-size: 40px;
 	transition: all 0.3s ease-in-out 0s;
 }
-
+.columns:hover .service-icon i { padding-top: 20px; }
 
 

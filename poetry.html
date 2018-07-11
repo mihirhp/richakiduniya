@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <!--- Basic Page Needs
+   ================================================== -->
+  <meta charset="utf-8">
+  <title>Richa ki Duniya : About</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+
+  <!-- Script
+   ================================================== -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Favicons
+	================================================== -->
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <link rel="icon" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-32x32.jpg" sizes="32x32">
+  <link rel="icon" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-192x192.jpg" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-180x180.jpg">
+  <meta name="msapplication-TileImage" content="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-270x270.jpg">
+</head>
+
+<body>
+
+  <!-- Header
+   ================================================== -->
+  <header>
+    <input id="hdfPagename" type="hidden" value="My Poetries" />
+    <div id="headNav-placeholder">
+  </header>
+  <!-- Header End -->
+
+  <!-- Content Section
+   ================================================== -->
+  <section id="info">
+    <div class="row">
+
+      <div class="bgrid-thirds s-bgrid-halves">
+        <div style="display:none;" class="html5gallery" data-skin="darkness" data-width="480" data-height="272">
+
+          <!-- Add images to Gallery -->
+          <a href="images/sliders/slide1.jpg">
+            <img src="images/sliders/slide1.jpg" alt="Trees">
+          </a>
+          <a href="images/sliders/slide2.jpg">
+            <img src="images/sliders/slide2.jpg" alt="Island">
+          </a>
+
+          <!-- Add videos to Gallery -->
+          <a href="images/sliders/Big_Buck_Bunny.mp4">
+            <img src="images/sliders/Big_Buck_Bunny.jpg" alt="Big Buck Bunny, Copyright Blender Foundation">
+          </a>
+
+          <!-- Add Youtube video to Gallery -->
+          <a href="https://www.youtube.com/embed/syahJ9TfWEc?feature=oembed">
+            <img src="http://img.youtube.com/embed/syahJ9TfWEc" alt="Youtube Video">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content End-->
+
+  <!-- footer
+   ================================================== -->
+  <footer>
+    <div id="footNav-placeholder">
+  </footer>
+  <!-- Footer End-->
+
+  <!-- Java Script
+   ================================================== -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src=js/jquery - 1.10.2.min.js><\/script>")</script>
+  <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/doubletaptogo.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript" src="/plugins/html5gallery/jquery.js"></script>
+  <script type="text/javascript" src="/plugins/html5gallery/html5gallery.js"></script>
+  <script>
+    $(function () {
+      $("#headNav-placeholder").load("/sharedviews/headNav.html");
+      $("#footNav-placeholder").load("/sharedviews/footNav.html");
+
+      $.ajax({
+        url: "images/sliders",
+        success: function (data) {
+          $(data).find("a:contains(.jpg)").each(function () {
+            // will loop through 
+            var images = $(this).attr("href");
+            console.log($(this).attr("href"));
+            //$('<p></p>').html(images).appendTo('a div of your choice')
+
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

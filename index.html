@@ -10,7 +10,7 @@
   <!--- Basic Page Needs
    ================================================== -->
   <meta charset="utf-8">
-  <title>Sparrow - Free Responsive HTML5/CSS3 Template</title>
+  <title>Richa ki Duniya : Home</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -30,8 +30,11 @@
 
   <!-- Favicons
 	================================================== -->
-  <link rel="shortcut icon" href="favicon.ico">
-
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <link rel="icon" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-32x32.jpg" sizes="32x32">
+  <link rel="icon" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-192x192.jpg" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-180x180.jpg">
+  <meta name="msapplication-TileImage" content="http://richakiduniya.com/wp-content/uploads/2018/05/cropped-IMG_20180329_180442-270x270.jpg">
 </head>
 
 <body>
@@ -39,73 +42,8 @@
   <!-- Header
    ================================================== -->
   <header>
-
-    <div class="row">
-
-      <div class="twelve columns">
-
-        <div class="logo">
-          <a href="index.html">
-            <img alt="" src="images/logo.png">
-          </a>
-        </div>
-
-        <nav id="nav-wrap">
-
-          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-          <ul id="nav" class="nav">
-
-            <li class="current">
-              <a href="index.htm">Home</a>
-            </li>
-            <li>
-              <span>
-                <a href="blog.html">Blog</a>
-              </span>
-              <ul>
-                <li>
-                  <a href="blog.html">Blog Index</a>
-                </li>
-                <li>
-                  <a href="single.html">Post</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span>
-                <a href="portfolio-index.html">Portfolio</a>
-              </span>
-              <ul>
-                <li>
-                  <a href="portfolio-index.html">Portfolio Index</a>
-                </li>
-                <li>
-                  <a href="portfolio.html">Portfolio Entry</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-            <li>
-              <a href="styles.html">Features</a>
-            </li>
-
-          </ul>
-          <!-- end #nav -->
-
-        </nav>
-        <!-- end #nav-wrap -->
-
-      </div>
-
-    </div>
-
+    <input id="hdfPagename" type="hidden" value="Home" />
+    <div id="headNav-placeholder">
   </header>
   <!-- Header End -->
 
@@ -166,7 +104,7 @@
 
         <div class="columns">
           <div class="service-icon">
-              <i class="fas fa-trash-alt"></i>
+            <i class="fas fa-trash-alt"></i>
           </div>
           <h2>Swacchata</h2>
           <p>Every citizen of the country should take it upon himself to make this campaign a success ...
@@ -191,80 +129,7 @@
   <!-- footer
    ================================================== -->
   <footer>
-
-    <div class="row">
-
-      <div class="twelve columns">
-
-        <ul class="footer-nav">
-          <li>
-            <a href="#">Home.</a>
-          </li>
-          <li>
-            <a href="#">Blog.</a>
-          </li>
-          <li>
-            <a href="#">Portfolio.</a>
-          </li>
-          <li>
-            <a href="#">About.</a>
-          </li>
-          <li>
-            <a href="#">Contact.</a>
-          </li>
-          <li>
-            <a href="#">Features.</a>
-          </li>
-        </ul>
-
-        <ul class="footer-social">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-google-plus-square"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-skype"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-rss-square"></i>
-            </a>
-          </li>
-        </ul>
-
-        <ul class="copyright">
-          <li>Copyright &copy; 2018 Richa</li>
-          <li>Design by
-            <a href="http://www.styleshout.com/">Styleshout</a>
-          </li>
-        </ul>
-
-      </div>
-
-      <div id="go-top" style="display: block;">
-        <a title="Back to Top" href="#">Go To Top</a>
-      </div>
-
-    </div>
-
+    <div id="footNav-placeholder">
   </footer>
   <!-- Footer End-->
 
@@ -277,6 +142,12 @@
   <script src="js/jquery.flexslider.js"></script>
   <script src="js/doubletaptogo.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    $(function () {
+      $("#headNav-placeholder").load("/sharedviews/headNav.html");
+      $("#footNav-placeholder").load("/sharedviews/footNav.html");
+    });
+  </script>
 
 </body>
 
